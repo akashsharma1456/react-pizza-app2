@@ -13,7 +13,8 @@ import {
   ProductDesc,
   ProductPrice,
   ProductButton,
-  ProductQuantity
+  ProductQuantity,
+  Button
 } from './ProductsElements';
 
 const ProductsMain = observer(({ heading }) => {
@@ -37,22 +38,22 @@ const ProductsMain = observer(({ heading }) => {
                       <ProductPrice>${product.price}</ProductPrice>
                       <ProductButton>{product.button}</ProductButton>
                       <ProductQuantity>
-                        <button
+                        <Button
                           disabled={product.quantity === 0}
                           onClick={() =>
                             (product.quantity = product.quantity - 1)
                           }
                         >
                           -
-                        </button>
+                        </Button>
                         {product.quantity}
-                        <button
+                        <Button
                           onClick={() =>
                             (product.quantity = product.quantity + 1)
                           }
                         >
                           +
-                        </button>
+                        </Button>
                       </ProductQuantity>
                     </ProductInfo>
                   </ProductCard>

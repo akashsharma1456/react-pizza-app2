@@ -10,9 +10,15 @@ import {
   OrderList
 } from './SidebarElements';
 import { products_data } from '../Products/data';
+//import { Alert } from 'react-alert'
 
+
+const myFunction = () => {
+  window.alert("Your Order Will Be Ready In 20 Minutes!")
+}
 
 const Sidebar = observer(({ isOpen, toggle }) => {  
+
   const total_per_row = products_data.productData
   .flatMap(el => el.details)
   .map(el => el.price * el.quantity)
@@ -62,7 +68,8 @@ const Sidebar = observer(({ isOpen, toggle }) => {
         </div>
       </Total>
       <SideBtnWrap>
-        <SidebarRoute to="/">Checkout</SidebarRoute>
+        <SidebarRoute onClick={myFunction}>Checkout</SidebarRoute>
+        
       </SideBtnWrap>
     </SidebarContainer>
   );

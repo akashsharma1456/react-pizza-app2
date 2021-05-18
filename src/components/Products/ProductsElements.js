@@ -78,3 +78,22 @@ export const ProductQuantity = styled.h4`
   gridTemplateColumns: '30px 20px 30px';
 }
 `;
+export const Button = styled.button`
+ margin: 10px;
+ height: 20px;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+ width: 20px;
+ border-radius: 2px;
+ border: none;
+ background: #e31837;
+ transition: 0.2 ease-out;
+ &:hover {
+  background: #ffc500;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  color: #000;
+}
+`;
+
