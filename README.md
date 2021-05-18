@@ -4,7 +4,6 @@ Student Id:- 2010138
 */
 
 
-
 In the project directory, you can run:
 
 ### `npm start`

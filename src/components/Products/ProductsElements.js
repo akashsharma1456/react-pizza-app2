@@ -72,3 +72,9 @@ export const ProductButton = styled.button`
     color: #000;
   }
 `;
+export const ProductQuantity = styled.h4`
+  display: 'grid';
+  font-size: 1rem;
+  gridTemplateColumns: '30px 20px 30px';
+}
+`;

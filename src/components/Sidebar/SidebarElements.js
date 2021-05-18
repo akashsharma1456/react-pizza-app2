@@ -13,7 +13,6 @@ export const SidebarContainer = styled.aside`
   top: 0;
   transition: 0.3s ease-in-out;
   right: ${({ isOpen }) => (isOpen ? '0' : '-1000px')};
-
   @media screen and (max-width: 400px) {
     width: 100%;
   }
@@ -39,7 +38,6 @@ export const SidebarMenu = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 80px);
   text-align: center;
-
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(3, 60px);
   }
@@ -55,7 +53,6 @@ export const SidebarLink = styled(Link)`
   transition: 0.2s ease-in-out;
   color: #000;
   cursor: pointer;
-
   &:hover {
     color: #e31837;
     transition: 0.2s ease-in-out;
@@ -78,10 +75,21 @@ export const SidebarRoute = styled(Link)`
   cursor: pointer;
   transition: 0.2s ease-in-out;
   text-decoration: none;
-
   &:hover {
     transition: 0.2s ease-in-out;
     background: #fff;
     color: #010606;
   }
+`;
+export const OrderList = styled.div`
+display : grid;
+margin-left : 20px;
+text-align: left;
+grid-template-columns: 1fr 1fr 1fr;
+`;
+export const Total = styled.div`
+display : grid;
+margin-left : 20px;
+text-align: left;
+grid-template-columns: auto 80px;
 `;
